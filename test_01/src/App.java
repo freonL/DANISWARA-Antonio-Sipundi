@@ -26,7 +26,7 @@ public class App {
         }
     }
 
-    public static int intersect(int[] arr1, int[] arr2 ) {
+    public static ArrayList<Integer> intersect(int[] arr1, int[] arr2 ) {
         ArrayList<Integer> result = new ArrayList<Integer>();
         int m = arr1.length;
         int n = arr2.length;
@@ -45,7 +45,7 @@ public class App {
                 j++;
             }
         }
-        return result.toArray();
+        return result;
         
     }
 
