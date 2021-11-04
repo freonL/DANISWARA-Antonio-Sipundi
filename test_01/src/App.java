@@ -31,10 +31,15 @@ public class App {
         int m = arr1.length;
         int n = arr2.length;
 
-        Arrays.sort(arr1);
-        Arrays.sort(arr2);
+        // sort using deafult sorting function (Dual pivot Quick Sort)
+        
+        Arrays.sort(arr1);  // O (m log m) 
+        Arrays.sort(arr2); // O (n log n) 
 
         int i =0, j=0;
+
+        // go through both soreted arrays and compare it
+        // O(m+n)
         while ( i < m && j<n) {
             if (arr1[i] == arr2[j]) {
                 result.add(arr1[i++]);
